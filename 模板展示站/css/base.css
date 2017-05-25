@@ -1,0 +1,114 @@
+﻿/** ------------------------------------全局定义---------------------------------------- **/
+@charset "utf-8";
+/** 将具有默认margin和padding的标记置零，所有标记的margin、padding都在使用时具体定义 **/
+*{ margin:0;padding:0;font-family:"microsoft yahei";}
+
+/** 修正IE5.x和IE6的斜体溢出bug **/
+*html body{ overflow:visible;}
+*html iframe, *html frame{ overflow:auto;}
+*html frameset{ overflow:hidden;}
+
+/** 常用标签，基本标签默认样式取消，HTML标签，取消基本标签默认样式，防止不同浏览器显示效果不同，text-align:center;解决不同浏览器居中问题 **/
+/*body{ color:#000;background:#FFF;font:12px/22px Verdana,Arial,sans-serif,"Times New Roman",宋体;text-align:center;-webkit-text-size-adjust:none;_margin:0;_height:100%;/*IE6 BUG}*/*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0;padding:0;}
+input,select{ font-size:12px;vertical-align:middle;}
+body, button, input, select, textarea {font: 12px/1.5 tahoma,arial,"\5b8b\4f53";}
+/*设置边框*/
+/** {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*:before,
+*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}*/
+
+/** 标签属性，textarea,input 强制输入时内容超出时换行 **/
+textarea,input{ word-wrap:break-word;word-break:break-all;padding:0px;}
+
+/** 清除ul列表标记的样式，ul列表更多的用在不需要列表前置符号的样式里 **/
+li{ list-style-type:none;}
+
+/** 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 **/
+img{ border:0 none;}
+
+/** 定义默认的链接样式，仅仅是作为默认样式提供，可以在各自的实例中覆盖掉 **/
+a:link, a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/** 去掉链接的虚线框 **/
+a{ outline:none;star:expression(this.onFocus=this.blur());}
+
+/** 定义H系列标签，覆盖H系列标签默认属性 **/
+h1{ font-size:24px;}
+h2{ font-size:20px;}
+h3{ font-size:18px;}
+h4{ font-size:16px;}
+h5{ font-size:14px;}
+h6{ font-size:12px;}
+/*定义文字大小*/
+.f12 {font-size: 12px;}
+.f14 {font-size: 14px;}
+.f16 {font-size: 16px;}
+.f18 {font-size: 18px;}
+.f20 {font-size: 20px;}
+.f22 {font-size: 22px;}
+.f24 {font-size: 24px;}
+.fb{font-weight: bold;}
+.text-ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/** ------------------------------------通用属性定义---------------------------------------- **/
+
+/** 鼠标样式 **/
+.pointer{ cursor:pointer;}
+
+/** 取消边框 **/
+.NoBorder{ border:0 none;}
+
+/** 文本对齐方式 **/
+.t_l{ text-align:left;}
+.t_c{ text-align:center;}
+.t_r{ text-align:right;}
+
+/** 字母和单词换行设置，强制内容换行，强制内容不换行 **/
+.Break{ word-break:break-all;word-wrap:break-word;}
+.Nobreak{ word-break:keep-all;word-wrap:normal;}
+
+/** 浮动定义 **/
+.fl{ float:left;}
+.fr{ float:right;}
+
+/** 定义文本下划线 **/
+.UnLine{ text-decoration:underline;}
+.DisunLine{ text-decoration:none;}
+
+/** 定位关系 **/
+.absolute{ position:absolute;}
+.relative{ position:relative;}
+
+/** ------------------------------------通用容器定义---------------------------------------- **/
+
+/** 容器 **/
+/*.container{width:980px;margin:0 auto;}*/
+.wrapper{ clear:both;overflow:hidden;}
+a:hover{text-decoration:none;}
+/*body{overflow-x:hidden;}*/
+
+/** 隐藏元素，当元素内容内容超出元素height 或 width 时，隐藏之 **/
+.o-hidden{ overflow:hidden;}
+
+/**
+** 隐藏元素，visibility可以隐藏元素，但是还是会在布局中占位 **/
+.invisible{ visibility:hidden;}
+
+/** 从页面布局上隐藏元素，从布局上隐藏元素 **/
+.hidden{ display:none;}
+.block{ display:block;}
+
+/** ------------------------------------清理元素--------------------------------------- **/
+
+/** 清理浮动元素,当浮动换行时后面元素不希望浮动，添加此属性，防止IE BUG **/
+.clearfix{ clear:both;height:0px;content:'.';font-size:1px;line-height:0px;visibility:hidden;overflow:hidden;}
+.cl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.cl{zoom:1;}
+em,i{font-style: normal;}
+/*ie兼容*/
+/*<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>*/

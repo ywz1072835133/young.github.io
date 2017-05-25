@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>首页</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="header cl">
+				<div class="content">
+					<a class="logo" href="#" target="_blank">
+						<img src="images/logo.png" alt="成都网站模板"/>
+					</a>
+					<ul class="nav">
+						<li>
+							<a class="on" href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">产品</a>
+						</li>
+						<li>
+							<a href="#">案例</a>
+						</li>
+						<li>
+							<a href="#">价格</a>
+						</li>
+						<li>
+							<a href="javascript">关于</a>
+							<ul class="down-nav">
+								<li>
+									<a href="#">关于志行<i class="fa fa-angle-right"></i></a>
+								</li>
+								<li>
+									<a href="#">团队<i class="fa fa-angle-right"></i></a>
+								</li>
+								<li>
+									<a href="#">功能<i class="fa fa-angle-right"></i></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">帮助</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="banner">
+				<ul>
+					<li attr="images/one.jpg">
+						<div class="item-bg"></div>
+					</li>
+					<li attr="images/two.jpg">
+						<div class="item-bg"></div>
+					</li>
+					<li attr="images/three.jpg">
+						<div class="item-bg"></div>
+					</li>
+				</ul>
+				<div class="swiper-pagination"></div>
+				<div class="ban-btn">
+					<div class="prev"><i class="fa fa-angle-left"></i></div>
+					<div class="next"><i class="fa fa-angle-right"></i></div>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="title-box">
+					<p class="title">产品</p>
+					<p class="label">年轻全面的技术团队+最新的建站技术+国际化界面设计观点=顶尖建站</p>
+				</div>
+				<div class="tab-box">
+					<div class="tab-one">
+						<ul>
+							<li><a href="javascript:;">艺术设计</a></li>
+							<li><a href="javascript:;">生活家具</a></li>
+							<li><a href="javascript:;">建筑装饰</a></li>
+							<li><a href="javascript:;">企业集团</a></li>
+							<li><a href="javascript:;">医疗教育</a></li>
+							<li><a href="javascript:;">服装饰品</a></li>
+							<li><a href="javascript:;">餐饮美食</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="product-list-box">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<a></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script>
+		banner({banBox:'.banner ul',
+		paginBox:'.swiper-pagination',
+		banLi:'.banner ul li'});
+	</script>
+</html>
